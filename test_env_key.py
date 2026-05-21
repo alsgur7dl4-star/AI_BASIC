@@ -4,7 +4,7 @@ import os
 # .env 파일 로드
 load_dotenv()
 
-open_api_key: str | None = os.getenv("OPEN_API_KEY")
+open_api_key: str | None = os.getenv("OPENAI_API_KEY")
 
 def mask_key(key):
   return key[:5]
